@@ -1,6 +1,9 @@
 package controller;
 
 import service.LicenseService;
+
+import java.util.ArrayList;
+
 import model.License;
 import util.LicenseGenerator;
 
@@ -30,6 +33,9 @@ public class LicenseController {
     }
 
     public void listLicences() {
-        System.out.println(licenceService.listLicences());
+    ArrayList<License> licenses = licenceService.listLicences();
+        for (License license : licenses) {
+            System.out.println("Licenca - " + license.getId() + " isActive - " + license.isActive());
+        }
     }
 }

@@ -4,6 +4,7 @@ import model.HashTable;
 import model.License;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class LicenseService {
     private HashTable hashTable;
@@ -56,6 +57,9 @@ public class LicenseService {
         for (ArrayList<License> bucket : hashTable.getLicenses()) {
             all.addAll(bucket);
         }
+
+        all.sort(Comparator.comparingInt(License::getId));
+        
         return all;
     }
 
