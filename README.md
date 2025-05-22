@@ -13,8 +13,6 @@ This work was all made in Java 21 and following the college assignment that can 
 
 These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-See the **📦 Deployment** section for information on how to deploy this project.
-
 ---
 
 ## 📋 Prerequisites
